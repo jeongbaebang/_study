@@ -1,12 +1,14 @@
-(()=>{
-    const $stepElems = document.querySelectorAll('.step');
-    const $graphicElems = document.querySelectorAll('.graphic-item');
-  
-    const stepElemsLength = $stepElems.length;
+(() => {
+  const $stepElems = document.querySelectorAll(".step");
+  const $graphicElems = document.querySelectorAll(".graphic-item");
 
-
-    $stepElems.forEach((element,key) => {
-        element.setAttribute('data-index',key);
+  const setDataCirculation = (nodeArray) => {
+    nodeArray.forEach((node) => {
+      node.forEach((element, key) => {
+        element.setAttribute("data-index", key);
+      });
     });
- 
+  };
+
+  setDataCirculation([$stepElems, $graphicElems]);
 })();
