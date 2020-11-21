@@ -26,6 +26,7 @@ img {
   padding: 0 1rem;
 }
 .scroll-graphic {
+  overflow-x: hidden;
   position: sticky;
   top: 0;
   height: 100vh;
@@ -41,6 +42,7 @@ img {
   height: 100%;
   opacity: 0;
   transition: 0.5s;
+  will-change: opacity;
 }
 
 .visible {
@@ -67,6 +69,6 @@ img {
   left: 0;
   bottom: 70%;
   width: 80px;
-
+  transform: translateX(-100%);
   transition: 1.5s 0.5s linear;
 }
