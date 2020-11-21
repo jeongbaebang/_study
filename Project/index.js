@@ -39,10 +39,13 @@
       step = $stepElems[i];
       if (!step) continue;
       boundingRect = step.getBoundingClientRect();
+      console.log("boundingRect.top:" + boundingRect.top);
+      console.log("window.innerHeight * 0.1:" + window.innerHeight * 0.1);
+      console.log("window.innerHeight * 0.5:" + window.innerHeight * 0.5);
 
       if (
         boundingRect.top > window.innerHeight * 0.1 &&
-        boundingRect.top < window.innerHeight * 0.8
+        boundingRect.top < window.innerHeight * 0.5
       ) {
         if (currentItem) {
           inactivate();

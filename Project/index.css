@@ -71,6 +71,7 @@ img {
 .scroll-text {
   position: relative;
   width: 60%;
+  text-align: center;
 }
 
 .step {
